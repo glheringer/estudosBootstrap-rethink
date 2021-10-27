@@ -64,15 +64,15 @@ Os prefixos como "-md"/"-xx" podem ser usados para quando a tela de um tamanhao 
     </div>  
 ```
 
-Para deixa um vazio =>  
+Para empurrar seu elemento quantas colunas você deseja:
 ```HTML
-<div class="col-md-4 offset-md-6">
+<div class="col-md-4 offset-md-6"> <!-- O numero 6 equivale à quantas colunas para a direta deslocar-->
       ...1
 </div>  
 ```
 Para organizar de outra forma usa order-n(o valor do número vai definir para onde sera movido):
 ```HTML
-<div class="col-md-4 order-1 "> // movido para a esquerda
+<div class="col-md-4 order-1 ">  <!--  movido para a esquerda -->
       ...1
 </div>  
 ```
