@@ -13,3 +13,7 @@ O mais usual e comum é adicionar o Boostrap às sua páginas usando o CDN, por 
 
 ---------------------------------------------------
 ## Grids
+Grids são uns dos recursos fundamentais para a criação de layouts em nossos websites, por padrão no CSS toda bloco de uma grid é dividido em 12 colunas. "O sistema grid Bootstrap usa vários containers, linhas e colunas para arranjar e alinhar conteúdo."
+Toda Grid começa com um Container, `<div class= "container" > </div>`
+Existem Vários tipos de Containers
+<img width="690" alt="Captura de Tela 2021-10-27 às 11 03 06" src="https://user-images.githubusercontent.com/91977484/139081496-edd4a866-1b7c-4538-8081-f31d56e91f1f.png">
