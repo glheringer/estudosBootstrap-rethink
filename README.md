@@ -19,13 +19,13 @@ Toda Grid começa com um Container, `<div class= "container" > </div>`, que exis
 
 <img width="690" alt="Captura de Tela 2021-10-27 às 11 03 06" src="https://user-images.githubusercontent.com/91977484/139081496-edd4a866-1b7c-4538-8081-f31d56e91f1f.png">
 
-#### Breakpoint
+<u>#### Breakpoint </u>
 Adapta para diferentes formatar do grid.
 <br><br>
 Tipos de Breakpoints:
 ![Screen Shot 2021-10-27 at 12 57 36](https://user-images.githubusercontent.com/87997848/139102899-1a79e8b8-a097-4eae-b79c-9bc6953becd7.png)
 
-#### Linha e Coluna :
+<u>#### Linha e Coluna :</u>
 
 A cada row(linha) pode-se ter até 12 colunas, pois o 12 é um valor que possibilita  criar diversos conceitos (2, 3 , 6 colunas).
 
