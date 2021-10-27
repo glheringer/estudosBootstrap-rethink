@@ -21,7 +21,7 @@ Toda Grid começa com um Container, `<div class= "container" > </div>`, que exis
 
 ### Breakpoint
 Adapta para diferentes formatar do grid.
-<br>
+<br><br>
 Tipos de Breakpoints:
 ![Screen Shot 2021-10-27 at 12 57 36](https://user-images.githubusercontent.com/87997848/139102899-1a79e8b8-a097-4eae-b79c-9bc6953becd7.png)
 
