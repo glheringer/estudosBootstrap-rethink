@@ -90,7 +90,7 @@ Para deixar um pequeno  espaço entre os elementos usa-se gutter(gx-n) n define 
 ---------------------------------------------------
 ## Componentes
 
-#### *Progress Bar*
+#### *Progress Bar*:
 Componentes de progresso são feitos com dois elementos HTML, um pouco de CSS para a largura e outros atributos. 
 - Nós usamos o elemento com `.progress` como um envolto para indicar o valor máximo da barra de progresso;
 - Nós usamos o elemento interno com .progress-bar para indicar o progresso da barra, até então;
@@ -102,7 +102,7 @@ Componentes de progresso são feitos com dois elementos HTML, um pouco de CSS pa
   </div>
   <div class="progress">
     <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-![Captura de Tela 2021-10-28 às 09 14 59](https://user-images.githubusercontent.com/91977484/139253350-32537954-9b7c-44ae-a314-126c59aa82a6.png)
-valuemax="100"></div>
+  valuemax="100"></div>
   </div>
   <div class="progress">
     <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
@@ -114,9 +114,42 @@ valuemax="100"></div>
     <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
   </div>
   ```
+  
   <br> Obtem-se a saída:
 
 ![Captura de Tela 2021-10-28 às 09 27 00](https://user-images.githubusercontent.com/91977484/139255033-706d2061-406e-4a34-934c-c401aae7de3e.png)
 
   
-#### **
+#### *Nav / NavBar*:
+-Nav
+O componente `.nav`cé feito com flexbox e provê uma forte fundação para construir todo tipo de componente de navegação. Ela possui sobrescrição de alguns estilos para trabalhar com listas, padding em links para criar áreas de clique maiores e estilo desativado básico.
+
+``` HTML
+  <ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link active" href="#">Ativo</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Desativado</a>
+    </li>
+  </ul>
+```
+<br> Obtem-se o seguinte resultado:
+![Captura de Tela 2021-10-28 às 09 58 59](https://user-images.githubusercontent.com/91977484/139260208-c553e4bc-871c-4bd8-be97-532f6cf54302.png)
+
+- NavBar
+  - Navbars precisam de um .navbar com .navbar-expand{-sm|-md|-lg|-xl} (para responsividade) e classes do esquema de cores;
+  - Navbars e seus conteúdos são fluidos, por padrão;
+  - Use containers alternativos para limitar suas larguras.
+  - Use nossas classes utilitárias de espaçamento e flex para controlar o espaço e alinhamento, dentro das navbars;
+  - Navbars são responsivos, por padrão, mas você pode modificar isso, facilmente;
+  - Comportamento responsivo depende do nosso plugin JavaScript Collapse.
+  - Navbars são escondidos, por padrão, quando imprimindo. Forçe-os a serem imprimidos, usando a classe .d-print no .navbar;
+  - Leia sobre a classe utilitária display.
+  - Garanta acessibilidade com o elemento <nav> ou, se estiver usando um elemento mais genérico (como <div>), coloque       role="navigation" em cada navbar para identificá-lo como tal, em tecnologias assistivas.
