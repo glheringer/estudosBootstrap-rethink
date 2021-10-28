@@ -141,15 +141,45 @@ O componente `.nav`cé feito com flexbox e provê uma forte fundação para cons
   </ul>
 ```
 <br> Obtem-se o seguinte resultado:
+
 ![Captura de Tela 2021-10-28 às 09 58 59](https://user-images.githubusercontent.com/91977484/139260208-c553e4bc-871c-4bd8-be97-532f6cf54302.png)
 
 - NavBar
-  - Navbars precisam de um .navbar com .navbar-expand{-sm|-md|-lg|-xl} (para responsividade) e classes do esquema de cores;
+  - Navbars precisam de um `.navbar` com `.navbar-expand{-sm|-md|-lg|-xl}` (para responsividade) e classes do esquema de cores;
   - Navbars e seus conteúdos são fluidos, por padrão;
   - Use containers alternativos para limitar suas larguras.
   - Use nossas classes utilitárias de espaçamento e flex para controlar o espaço e alinhamento, dentro das navbars;
   - Navbars são responsivos, por padrão, mas você pode modificar isso, facilmente;
   - Comportamento responsivo depende do nosso plugin JavaScript Collapse.
-  - Navbars são escondidos, por padrão, quando imprimindo. Forçe-os a serem imprimidos, usando a classe .d-print no .navbar;
+  - Navbars são escondidos, por padrão, quando imprimindo. Forçe-os a serem imprimidos, usando a classe `.d-print `no `.navbar;`
   - Leia sobre a classe utilitária display.
-  - Garanta acessibilidade com o elemento <nav> ou, se estiver usando um elemento mais genérico (como <div>), coloque       role="navigation" em cada navbar para identificá-lo como tal, em tecnologias assistivas.
+  - Garanta acessibilidade com o elemento `<nav> `ou, se estiver usando um elemento mais genérico `(como <div>)`, coloque       `role="navigation"` em cada navbar para identificá-lo como tal, em tecnologias assistivas.
+ 
+#### *Breadcrumbs* :
+  Indica a localização da página atual, dentro de uma hierarquia de navegação e, automaticamente, coloca separadores usando CSS.
+  ``` HTML
+   <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item active" aria-current="page">Home</li>
+  </ol>
+</nav>
+
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Biblioteca</li>
+    </ol>
+  </nav>
+
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item"><a href="#">Biblioteca</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Dados</li>
+    </ol>
+  </nav>
+  ```
+ 
+ #### * *:
+  
+  
