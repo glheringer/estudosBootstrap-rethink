@@ -115,8 +115,8 @@ valuemax="100"></div>
   </div>
   ```
   <br> Obtem-se a saída:
-!(https://user-images.githubusercontent.com/91977484/139254725-65913a56-30b2-4550-85ab-391854448357.png)
 
+![Captura de Tela 2021-10-28 às 09 27 00](https://user-images.githubusercontent.com/91977484/139255033-706d2061-406e-4a34-934c-c401aae7de3e.png)
 
   
 #### **
