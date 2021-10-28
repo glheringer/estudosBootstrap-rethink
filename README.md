@@ -90,4 +90,11 @@ Para deixar um pequeno  espaço entre os elementos usa-se gutter(gx-n) n define 
 ---------------------------------------------------
 ## Componentes
 
-#### * *
+#### *Progress Bar*
+Componentes de progresso são feitos com dois elementos HTML, um pouco de CSS para a largura e outros atributos. 
+- Nós usamos o elemento com `.progress` como um envolto para indicar o valor máximo da barra de progresso;
+- Nós usamos o elemento interno com .progress-bar para indicar o progresso da barra, até então;
+- A `.progress-bar` exige um CSS inline, classe utilitária ou CSS personalizado, para definir sua largura (`style = "widht : numero %`);
+- A classe `.progress-bar` também exige o uso de alguns atributos role e aria para fazê-lo acessível.
+
+#### **
