@@ -101,7 +101,8 @@ Componentes de progresso são feitos com dois elementos HTML, um pouco de CSS pa
   <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
   </div>
   <div class="progress">
-    <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+    <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-![Captura de Tela 2021-10-28 às 09 14 59](https://user-images.githubusercontent.com/91977484/139253350-32537954-9b7c-44ae-a314-126c59aa82a6.png)
+valuemax="100"></div>
   </div>
   <div class="progress">
     <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
@@ -113,4 +114,7 @@ Componentes de progresso são feitos com dois elementos HTML, um pouco de CSS pa
     <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
   </div>
   ```
+  <br> Obtem-se a saída:
+  ![Captura de Tela 2021-10-28 às 09 14 59](https://user-images.githubusercontent.com/91977484/139253386-6aee8ae0-469c-4883-bb51-2bcf022f66c4.png)
+  
 #### **
