@@ -158,7 +158,7 @@ O componente `.nav`cé feito com flexbox e provê uma forte fundação para cons
 #### *Breadcrumbs* :
   Indica a localização da página atual, dentro de uma hierarquia de navegação e, automaticamente, coloca separadores usando CSS.
   ``` HTML
-   <nav aria-label="breadcrumb">
+  <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
     <li class="breadcrumb-item active" aria-current="page">Home</li>
   </ol>
@@ -180,6 +180,20 @@ O componente `.nav`cé feito com flexbox e provê uma forte fundação para cons
   </nav>
   ```
  
- #### * *:
-  
+ #### *Cards *:
+ Os cards Bootstrap proporcionam um container de conteúdo flexível e extensível com múltiplos variantes e opções.
+ ``` HTML
+ <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">
+  <div class="card-body">
+    <h5 class="card-title">Título do card</h5>
+    <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+    <a href="#" class="btn btn-primary">Visitar</a>
+  </div>
+</div>
+ ``` 
+<br> Obtem-se o seguinte resultado: 
+
+![Captura de Tela 2021-10-28 às 10 51 05](https://user-images.githubusercontent.com/91977484/139269675-392fb973-c0e0-4b13-aff4-9683e1b333f5.png)
+
   
