@@ -288,7 +288,58 @@ Exemplo forms básico:
 ## Fazendo páginas interativas com JavaScript-enabled components.
 Para adicionar o JS , biblioteca Popper e até Jquery em seu projeto via CDN, copiar as seguintes linhas de comando:
 ``` HTML
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>. <!-- Jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> <!-- Popper -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> <!-- JS -->
 ``` 
+Adicionando esse CDN para o JS, os componentes que precisam de código JavaScript para funcionar já funcionarão normalmente, pois a biblioteca Boostrap já tem esses códigos prontos. Os componentes que funcionam dessa forma são:
+- Carossel : 
+Para ser exibido, por padrão o carrossel não tem nenhum tamanho, então é necessário usar classes utilitárias que para que os slides tenham um tamanho, e então eles serão realmente exibidos.
+Código comentado com explicação:
+``` HTML
+    <div id="welcomeCarousel" class="carousel slide" data-bs-ride="carousel"> <!--Garante que o carrossel seja carregado                    primeiro na página -->
+            <!--O proximo bloco é para permirtir passar pelos slides manualmente e deve ter a classe "carousel-indicators"                  nele-->
+            <div class="carousel-indicators"> <!--Indicadores de posicao do carrossel e faz a passagem deles-->
+                <button type="button" data-bs-target="#welcomeCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Welcome 1"></button> <!--data-bs-slide-to diz onde o slide atual nunca                          deve voltar -->
+                <button type="button" data-bs-target="#welcomeCarousel" data-bs-slide-to="1" 
+                    aria-label="Welcome 2"></button> <!--data-bs-target contem a id do incio do carrosel, onde deve voltar-->
+                <button type="button" data-bs-target="#welcomeCarousel" data-bs-slide-to="2"
+                    aria-label="Welcome 3"></button>
+            </div>
+            <div class="carousel-inner"> <!--Neste bloco temos os slides individuais-->
+                <div class="carousel-item welcome-carousel-image1 active"> <!--Cada slide dentro do carrossel tem o carousel                      item aplicado a ele-->
+                    <div class="carousel-caption">
+                        <h1>Welcome to Bethany's Pie Shop</h1>
+                        <p>Home to the best pies on the internet.</p>
+                    </div>
+                </div>
+                <div class="carousel-item welcome-carousel-image2">
+                    <div class="carousel-caption text-start">
+                        <h1>Discover our pie subscription</h1>
+                        <p>Our delicious pies delivered to your door. Every week.</p>
+                        <p><a class="btn btn-lg btn-primary" href="piesubscription.html" role="button">Sign up
+                                today</a></p>
+                    </div>
+                </div>
+                <div class="carousel-item welcome-carousel-image3">
+                    <div class="carousel-caption text-end">
+                        <h1>Browse the pies of summer.</h1>
+                        <p>Every season has its pies. Enjoy our summer fruit pies now.</p>
+                        <p><a class="btn btn-lg btn-primary" href="fruitpies.html" role="button">Fruit pies</a></p>
+                    </div>
+                </div>
+            </div> <!--Fim do bloco de slides-->
+            <!--O ultimo bloco é o bloco dos botoes para avançar e regredir slide-->
+            <button class="carousel-control-prev" type="button" data-bs-target="#welcomeCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#welcomeCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+```
+- Offcanvas 
+
