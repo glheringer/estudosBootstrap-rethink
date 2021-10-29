@@ -260,7 +260,7 @@ O componente `.nav`cé feito com flexbox e provê uma forte fundação para cons
 ![Captura de Tela 2021-10-28 às 10 51 05](https://user-images.githubusercontent.com/91977484/139269675-392fb973-c0e0-4b13-aff4-9683e1b333f5.png)
 
 ---------------------------------------------------
-##Formulários com Boostrap
+## Formulários com Boostrap
 Exemplo forms básico:
 
 ``` HTML
@@ -283,3 +283,12 @@ Exemplo forms básico:
 ```
 <br> Obtem-se o seguinte resultado: 
 <img width="937" alt="Captura de Tela 2021-10-29 às 09 37 32" src="https://user-images.githubusercontent.com/91977484/139435649-6eeded34-b053-450c-b5cb-464f04162e9e.png">
+
+---------------------------------------------------
+## Fazendo páginas interativas com JavaScript-enabled components.
+Para adicionar o JS , biblioteca Popper e até Jquery em seu projeto via CDN, copiar as seguintes linhas de comando:
+``` HTML
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+``` 
