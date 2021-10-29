@@ -342,5 +342,108 @@ Código comentado com explicação:
         </div>
 ```
 - *Offcanvas*: <br>
+Para usar esse componente também é necessário adicionar o JS ao código e este componente também é oculto "por natureza", só se torna visível com o comando `show`.
+Código para OffCanvas:
+``` HTML
+   <div class="offcanvas offcanvas-start shopping-cart-offcanvas" data-bs-scroll="true" tabindex="-1"
+            id="shoppingCart" aria-labelledby="shoppingCartLabel">
 
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="shoppingCartLabel">Your shopping cart</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+
+            <div class="offcanvas-body">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Pie name</th>
+                                <th>Quantity</th>
+                                <th class="text-center">Price</th>
+                                <th class="text-center">Total</th>
+                                <th> </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="col-sm-8 col-md-6">
+                                    <div class="media">
+                                        <img class="mr-3 thumbnail img-fluid" width="75"
+                                            src="images/products/pumpkinpiesmall.jpg" alt="pumpkin pie">
+                                        <div class="media-body">
+                                            <h5 class="mt-0 media-heading text-primary">Pumpkin pie</h5>
+                                            <span>Status: </span><span class="text-success"><strong>In
+                                                    Stock</strong></span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="col-sm-1 col-md-1" style="text-align: center">
+                                    <input type="number" class="form-control" value="2">
+                                </td>
+                                <td class="col-sm-1 col-md-1 text-center"><strong>$14.95</strong></td>
+                                <td class="col-sm-1 col-md-1 text-center"><strong>$29.90</strong></td>
+                                <td class="col-sm-1 col-md-1">
+                                    <button type="button" class="btn btn-danger">
+                                        X
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-sm-8 col-md-6">
+                                    <div class="media">
+                                        <img class="mr-3 thumbnail" width="75" src="images/products/applepiesmall.jpg"
+                                            alt="apple pie">
+                                        <div class="media-body">
+                                            <h5 class="mt-0 media-heading text-primary">Apple pie</h5>
+                                            <span>Status: </span><span class="text-warning"><strong>Last
+                                                    items</strong></span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="col-sm-1 col-md-1" style="text-align: center">
+                                    <input type="number" class="form-control" value="1">
+                                </td>
+                                <td class="col-sm-1 col-md-1 text-center"><strong>$14.95</strong></td>
+                                <td class="col-sm-1 col-md-1 text-center"><strong>$14.95</strong></td>
+                                <td class="col-sm-1 col-md-1">
+                                    <button type="button" class="btn btn-danger">
+                                        X
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="text-right">
+                                    <h5>Subtotal</h5>
+                                </td>
+                                <td class="text-center">
+                                    <h5><strong>$44.85</strong></h5>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="text-right">
+                                    <h5>Shipping</h5>
+                                </td>
+                                <td class="text-center">
+                                    <h5><strong>$10.00</strong></h5>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="text-right">
+                                    <h3>Total</h3>
+                                </td>
+                                <td class="text-center">
+                                    <h3><strong>$54.85</strong></h3>
+                                </td>
+                                <td></td>
+
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+```
 
