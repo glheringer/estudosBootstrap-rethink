@@ -297,18 +297,18 @@ Adicionando esse CDN para o JS, os componentes que precisam de código JavaScrip
 Para ser exibido, por padrão o carrossel não tem nenhum tamanho, então é necessário usar classes utilitárias que para que os slides tenham um tamanho, e então eles serão realmente exibidos.
 Código comentado com explicação:
 ``` HTML
-    <div id="welcomeCarousel" class="carousel slide" data-bs-ride="carousel"> <!--Garante que o carrossel seja carregado                    primeiro na página -->
-            <!--O proximo bloco é para permirtir passar pelos slides manualmente e deve ter a classe "carousel-indicators"                  nele-->
+     <div id="welcomeCarousel" class="carousel slide" data-bs-ride="carousel"> <!--Garante que o carrossel seja carregado primeiro na página -->
+            <!--O proximo bloco é para permirtir passar pelos slides manualmente e deve ter a classe "carousel-indicators" nele-->
             <div class="carousel-indicators"> <!--Indicadores de posicao do carrossel e faz a passagem deles-->
                 <button type="button" data-bs-target="#welcomeCarousel" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Welcome 1"></button> <!--data-bs-slide-to diz onde o slide atual nunca                          deve voltar -->
+                    aria-current="true" aria-label="Welcome 1"></button> <!--data-bs-slide-to diz onde o slide atual nunca deve voltar -->
                 <button type="button" data-bs-target="#welcomeCarousel" data-bs-slide-to="1" 
                     aria-label="Welcome 2"></button> <!--data-bs-target contem a id do incio do carrosel, onde deve voltar-->
                 <button type="button" data-bs-target="#welcomeCarousel" data-bs-slide-to="2"
                     aria-label="Welcome 3"></button>
             </div>
             <div class="carousel-inner"> <!--Neste bloco temos os slides individuais-->
-                <div class="carousel-item welcome-carousel-image1 active"> <!--Cada slide dentro do carrossel tem o carousel                      item aplicado a ele-->
+                <div class="carousel-item welcome-carousel-image1 active"> <!--Cada slide dentro do carrossel tem o carousel item aplicado a ele-->
                     <div class="carousel-caption">
                         <h1>Welcome to Bethany's Pie Shop</h1>
                         <p>Home to the best pies on the internet.</p>
