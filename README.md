@@ -293,7 +293,7 @@ Para adicionar o JS , biblioteca Popper e até Jquery em seu projeto via CDN, co
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> <!-- JS -->
 ``` 
 Adicionando esse CDN para o JS, os componentes que precisam de código JavaScript para funcionar já funcionarão normalmente, pois a biblioteca Boostrap já tem esses códigos prontos. Os componentes que funcionam dessa forma são:
-- Carossel : 
+- *Carossel* : <br>
 Para ser exibido, por padrão o carrossel não tem nenhum tamanho, então é necessário usar classes utilitárias que para que os slides tenham um tamanho, e então eles serão realmente exibidos.
 Código comentado com explicação:
 ``` HTML
@@ -341,5 +341,6 @@ Código comentado com explicação:
             </button>
         </div>
 ```
-- Offcanvas 
+- *Offcanvas*: <br>
+
 
